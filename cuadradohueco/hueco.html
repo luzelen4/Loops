@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuadrado hueco</title>
+</head>
+<body>
+    <script>
+        
+        var lado = 5;
+        // filas
+        for (var i = 0; i < lado; i++) {
+            // columnas
+            for (var j = 0; j < lado; j++) {
+                
+                if (i === 0 || i === lado - 1 || j === 0 || j === lado - 1) {
+                    document.write("*");
+                } else {
+                    //  imprimir espacio en blanco
+                    document.write("&nbsp; ");
+                }
+            }
+           
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patrón de tablero de ajedrez</title>
+</head>
+<body>
+    <script>
+        var filas = 8;
+        var columnas = 8;
+
+        // filas
+        for (var i = 0; i < filas; i++) {
+            // columnas
+            for (var j = 0; j < columnas; j++) {
+                
+                if ((i + j) % 2 === 0) {
+                    document.write("* ");
+                } else {
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
